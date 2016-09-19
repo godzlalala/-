@@ -1,0 +1,291 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>略略略导航-走你</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="略略略导航,导航,略略略导航走你,网址大全,网址导航" />
+<meta name="description" content="最清爽的网址导航来了，略略略导航全新Metro界面，彻底抛弃传统网址之家杂乱的界面，使用Win8简洁风格，方便快捷简洁大方的卡片链接，轻滑鼠标就能快速翻页，赶快设置go.looooool.cn为上网主页吧。（联系QQ：136208872）定制和本站一样的专属导航" />
+<link rel="stylesheet" href="./css/mokuge.css" >
+<script type="text/javascript" src="./js/jquery-1.4.4.min.js" ></script>
+<script type="text/javascript" src="./js/home.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.article ul li').mouseover(function(){
+		$(this).find('a').stop().animate({"top":"-15px"}, 500); 
+		$(this).find('span').stop().animate({"bottom":"0"}, 200); 
+	})
+	$('.article ul li').mouseout(function(){
+		$(this).find('a').stop().animate({"top":"0"}, 500); 
+		$(this).find('span').stop().animate({"bottom":"-25px"}, 200); 
+	})
+});
+    $(document).ready(function(){
+            //为了安全 google chrome 等浏览器是禁止本地文件写Cookie的即file:///F:/Lord%20community/test/Untitled-2.html这样的以file开头的是不能写本地文件的
+            var cookieClass = getCookie('class');//读取需要缓存的对象。
+            $("body").attr("class",cookieClass);//
+            $(".skin_chose a").each(function(){
+                    $(this).click(function(){                          
+                            var className=$(this).attr("class");//保存当前选择的类名
+                            $("body").attr("class",className,30);//把选中的类名给body
+                            function SetCookie(name,value,day)//两个参数，一个是cookie的名子，一个是值
+                            {
+                                var exp  = new Date();    //new Date("December 31, 9998");
+                                exp.setTime(exp.getTime() + day*24*60*60*1000);
+                                document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+                            }
+                            SetCookie("class",className,30);
+                    })
+                });
+            });
+            function getCookie(name)//取cookies函数       
+            {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+</script>
+</head>
+<body>
+<div id="content">
+<b class="cloud"></b>
+<div id="header">
+<div class="header">
+<div class="logo">
+<h1><a href="#"  title="略略略网址导航">略略略网址导航</a></h1>
+</div>
+			<div class="sideGuide">
+				<b class="curBg"></b>
+				<ul>
+					<li class="on"><a href="javascript:void(0)">常用</a></li>
+					<li><a href="javascript:void(0)">视频音乐</a></li>
+					<!--
+					<li><a href="javascript:void(0)">新闻资讯</a></li>
+					<li><a href="javascript:void(0)">购物淘宝</a></li>
+					<li><a href="javascript:void(0)">游戏娱乐</a></li>
+
+					<li><a href="javascript:void(0)">实用工具</a></li>
+					<li><a href="javascript:void(0)">下载存储</a></li>
+										-->
+				</ul>
+			</div>
+</div>
+	</div>
+<script>
+var timestamp = new Date().getTime();
+</script>
+<div id="art1" class="article">
+    <!--名站导航-->
+      <ul>
+<li class="one" id="logo_14"><a href="https://www.baidu.com/"  style="background:url(./images/changyong/baidu.jpg) center no-repeat;" target="_blank">百度</a>
+<span id="logo_14">百度</span></li>
+<li class="one" id="logo_13"><a href="http://www.hostloc.com/"  style="background:url(./images/changyong/loc.jpg) center no-repeat;" target="_blank">HOSTLOC</a>
+<span id="logo_13">HOSTLOC</span></li>
+<li class="one" id="logo_12"><a href="https://www.dns.la/manage/"  style="background:url(./images/changyong/dnsla.jpg) center no-repeat;" target="_blank">DNSLA</a>
+<span id="logo_12">DNSLA</span></li>
+<li class="one" id="logo_11"><a href="https://passport.qcloud.com/"  style="background:url(./images/changyong/txcloud.jpg) center no-repeat;" target="_blank">腾讯云</a>
+<span id="logo_11">腾讯云</span></li>
+<li class="one" id="logo_10"><a href="http://www.weibo.com/"  style="background:url(./images/changyong/weibo.jpg) center no-repeat;" target="_blank">新浪微博</a>
+<span id="logo_10">新浪微博</span></li>
+<li class="one" id="logo_9"><a href="https://www.aliyun.com/"  style="background:url(./images/changyong/aliyun.jpg) center no-repeat;" target="_blank">阿里云</a>
+<span id="logo_9">阿里云</span></li>
+<li class="one" id="logo_8"><a href="https://www.zzidc.com/"  style="background:url(./images/changyong/jingan.jpg) center no-repeat;" target="_blank">景安</a>
+<span id="logo_8">景安</span></li>
+<li class="one" id="logo_7"><a href="https://www.qiniu.com/"  style="background:url(./images/changyong/qiniu.jpg) center no-repeat;" target="_blank">七牛</a>
+<span id="logo_7">七牛</span></li>
+<li class="one" id="logo_6"><a href="https://www.taobao.com/"  style="background:url(./images/changyong/taobao.jpg) center no-repeat;" target="_blank">淘宝</a>
+<span id="logo_6">淘宝</span></li>
+<li class="one" id="logo_5"><a href="http://bbs.125.la/"  style="background:url(./images/changyong/jingyi.jpg) center no-repeat;" target="_blank">精易论坛</a>
+<span id="logo_5">精易论坛</span></li>
+<li class="one" id="logo_4"><a href="http://www.52pojie.cn/"  style="background:url(./images/changyong/52pojie.jpg) center no-repeat;" target="_blank">52破解</a>
+<span id="logo_4">52破解</span></li>
+<li class="one" id="logo_3"><a href="http://www.west.cn/"  style="background:url(./images/changyong/xishu.jpg) center no-repeat;" target="_blank">西部数码</a>
+<span id="logo_3">西部数码</span></li>
+<li class="one" id="logo_3"><a href="http://spoc.tfswufe.edu.cn/"  style="background:url(./images/changyong/tfspoc.jpg) center no-repeat;" target="_blank">学校校讯通</a>
+<span id="logo_3">学校校讯通</span></li>
+<li class="one" id="logo_2"><a href="http://portal.tf-swufe.net/web/guest/243"  style="background:url(./images/changyong/tfpersonal.jpg) center no-repeat;" target="_blank">学校个人信息</a>
+<span id="logo_2">学校个人信息</span></li>
+<li class="one" id="logo_1"><a href="http://www.bilibili.com/"  style="background:url(./images/changyong/bilibili.jpg) center no-repeat;" target="_blank">Bilibili</a>
+<span id="logo_1">Bilibili</span></li>
+<li class="one" id="logo_1"><a href="https://bce.baidu.com/"  style="background:url(./images/changyong/baiduyun.jpg) center no-repeat;" target="_blank">百度云应用</a>
+<span id="logo_1">百度云应用</span></li>
+<li class="one" id="logo_1"><a href="http://su.baidu.com/"  style="background:url(./images/changyong/baidujiasu.jpg) center no-repeat;" target="_blank">百度云加速</a>
+<span id="logo_1">百度云加速</span></li>
+<li class="one" id="logo_1"><a href="http://www.17ce.com/"  style="background:url(./images/changyong/17ce.jpg) center no-repeat;" target="_blank">17ce</a>
+<span id="logo_1">17ce</span></li>
+<li class="one" id="logo_1"><a href="http://ping.chinaz.com/"  style="background:url(./images/changyong/chaojiping.jpg) center no-repeat;" target="_blank">站长工具超级ping</a>
+<span id="logo_1">站长工具超级ping</span></li>
+      </ul>
+	</div>
+
+	<div id="art2" class="article">
+   <!--视频音乐-->
+      <ul>
+<li class="one" id="logo_16"><a href="http://www.youku.com/"  style="background:url(./images/shipinyinyue/youku.png) center no-repeat;" target="_blank">优酷</a>
+<span id="logo_16">优酷</span></li>
+<li class="one" id="logo_15"><a href="http://www.iqiyi.com/"  style="background:url(./images/shipinyinyue/aiqiyi.png) center no-repeat;" target="_blank">爱奇艺</a>
+<span id="logo_15">爱奇艺</span></li>
+<li class="one" id="logo_11"><a href="http://tv.sohu.com/"  style="background:url(./images/shipinyinyue/souhu.png) center no-repeat;" target="_blank">搜狐视频</a>
+<span id="logo_11">搜狐视频</span></li>
+<li class="one" id="logo_12"><a href="http://www.ku6.com/"  style="background:url(./images/shipinyinyue/ku6.png) center no-repeat;" target="_blank">酷6</a>
+<span id="logo_12">酷6</span></li>
+<li class="one" id="logo_13"><a href="http://v.qq.com/"  style="background:url(./images/shipinyinyue/txvideo.png) center no-repeat;" target="_blank">腾讯视频</a>
+<span id="logo_13">腾讯视频</span></li>
+<li class="one" id="logo_10"><a href="http://www.funshion.com/"  style="background:url(./images/changyong/bilibili.jpg) center no-repeat;" target="_blank">Bilibili</a>
+<span id="logo_10">Bilibili</span></li>
+<li class="one" id="logo_11"><a href="http://www.letv.com/"  style="background:url(./images/shipinyinyue/leshi.png) center no-repeat;" target="_blank">乐视网</a>
+<span id="logo_11">乐视网</span></li>
+<li class="one" id="logo_9"><a href="http://www.pps.tv/"  style="background:url(./images/shipinyinyue/pps.png) center no-repeat;" target="_blank">PPS</a>
+<span id="logo_9">PPS</span></li>
+<li class="one" id="logo_8"><a href="http://www.kugou.com/"  style="background:url(./images/shipinyinyue/kugou.png) center no-repeat;" target="_blank">酷狗音乐</a>
+<span id="logo_8">酷狗音乐</span></li>
+<li class="one" id="logo_7"><a href="http://music.163.com/"  style="background:url(./images/shipinyinyue/wymusic.png) center no-repeat;" target="_blank">网易云音乐</a>
+<span id="logo_7">网易云音乐</span></li>
+<li class="one" id="logo_6"><a href="http://y.qq.com/"  style="background:url(./images/shipinyinyue/qqmusic.png) center no-repeat;" target="_blank">QQ音乐</a>
+<span id="logo_6">QQ音乐</span></li>
+<li class="one" id="logo_18"><a href="http://www.xiami.com/"  style="background:url(./images/shipinyinyue/xiami.png) center no-repeat;" target="_blank">虾米音乐</a>
+<span id="logo_18">虾米音乐</span></li>
+<li class="one" id="logo_4"><a href="http://www.yinyuetai.com/"  style="background:url(./images/shipinyinyue/yyt.png) center no-repeat;" target="_blank">音悦台</a>
+<span id="logo_4">音悦台</span></li>
+<li class="one" id="logo_3"><a href="http://www.panda.tv/"  style="background:url(./images/shipinyinyue/xiongmaotv.png) center no-repeat;" target="_blank">熊猫TV</a>
+<span id="logo_3">熊猫TV</span></li>
+<li class="one" id="logo_2"><a href="http://www.huya.com/"  style="background:url(./images/shipinyinyue/huya.png) center no-repeat;" target="_blank">虎牙直播</a>
+<span id="logo_2">虎牙直播</span></li>
+<li class="one" id="logo_3"><a href="" style="background:url(./images/shipinyinyue/zhanqi.png) center no-repeat;" target="_blank">战旗TV</a>
+<span id="logo_3">战旗TV</span></li>
+      </ul>
+    </div>
+ <!--
+			<div id="art3" class="article">
+    <!--新闻资讯
+      <ul>
+<li class="one" id="logo_13"><a href="http://www.people.com.cn/"  style="background:url(/uploads/allimg/131205/1_120501552G131.png) center no-repeat;" target="_blank">人民网</a>
+<span id="logo_13">人民网</span></li><li class="one" id="logo_14"><a href="http://www.huanqiu.com/"  style="background:url(/uploads/allimg/131205/1_1205015A55609.png) center no-repeat;" target="_blank">环球网</a>
+<span id="logo_14">环球网</span></li><li class="one" id="logo_15"><a href="http://www.nddaily.com/"  style="background:url(/uploads/allimg/131205/131205/1-131205022S5201.png) center no-repeat;" target="_blank">南都网</a>
+<span id="logo_15">南都网</span></li><li class="one" id="logo_16"><a href="http://www.xinhuanet.com/"  style="background:url(/uploads/allimg/131205/1_120501591A019.png) center no-repeat;" target="_blank">新华网</a>
+<span id="logo_16">新华网</span></li><li class="one" id="logo_17"><a href="http://news.qq.com/"  style="background:url(/uploads/allimg/131205/1_1205020022AY.gif) center no-repeat;" target="_blank">腾讯新闻</a>
+<span id="logo_17">腾讯新闻</span></li><li class="one" id="logo_1"><a href="http://www.zaobao.com/"  style="background:url(/uploads/allimg/131205/1-1312050240540-L.png) center no-repeat;" target="_blank">联合早报</a>
+<span id="logo_1">联合早报</span></li><li class="one" id="logo_1"><a href="http://news.163.com/"  style="background:url(/uploads/allimg/131205/1-1312050242210-L.png) center no-repeat;" target="_blank">网易新闻</a>
+<span id="logo_1">网易新闻</span></li><li class="one" id="logo_1"><a href="http://www.china.com/"  style="background:url(/uploads/allimg/131205/1-131205030A70-L.png) center no-repeat;" target="_blank">中华网</a>
+<span id="logo_1">中华网</span></li><li class="one" id="logo_1"><a href="http://www.cnn.com/"  style="background:url(/uploads/allimg/131205/1-1312050310440-L.png) center no-repeat;" target="_blank">CNN</a>
+<span id="logo_1">CNN</span></li><li class="one" id="logo_13"><a href="http://www.time.com/"  style="background:url(/uploads/allimg/131205/1-1312050315350-L.png) center no-repeat;" target="_blank">时代周刊</a>
+<span id="logo_13">时代周刊</span></li><li class="one" id="logo_6"><a href="http://www.ce.cn/"  style="background:url(/uploads/allimg/131205/1_12050320413444.png) center no-repeat;" target="_blank">中国经济网</a>
+<span id="logo_6">中国经济网</span></li><li class="one" id="logo_12"><a href="http://www.it892.com/"  style="background:url(/uploads/allimg/140109/1-1401091939110-L.png) center no-repeat;" target="_blank">电脑技术网</a>
+<span id="logo_12">电脑技术网</span></li>
+      </ul>		
+			</div>
+
+			<div id="art4" class="article">
+    <!--购物淘宝
+      <ul>
+<li class="one" id="logo_2"><a href="http://www.tmall.com/"  style="background:url(/uploads/allimg/131205/131205/1-1312050325261A.png) center no-repeat;" target="_blank">天猫商城</a>
+<span id="logo_2">天猫商城</span></li><li class="one" id="logo_1"><a href="http://www.dangdang.com/"  style="background:url(/uploads/allimg/131205/1_12050326195019.png) center no-repeat;" target="_blank">当当网</a>
+<span id="logo_1">当当网</span></li><li class="one" id="logo_5"><a href="http://www.yhd.com/"  style="background:url(/uploads/allimg/131205/1_1205032FcX9.png) center no-repeat;" target="_blank">1号点</a>
+<span id="logo_5">1号点</span></li><li class="one" id="logo_7"><a href="http://www.jd.com/"  style="background:url(/uploads/allimg/131205/1_1205032K91G9.png) center no-repeat;" target="_blank">京东商城</a>
+<span id="logo_7">京东商城</span></li><li class="one" id="logo_18"><a href="http://www.meituan.com/"  style="background:url(/uploads/allimg/131205/1_12050329231428.png) center no-repeat;" target="_blank">美团</a>
+<span id="logo_18">美团</span></li><li class="one" id="logo_15"><a href="http://www.suning.com/"  style="background:url(/uploads/allimg/131205/1_120503312240G.png) center no-repeat;" target="_blank">苏宁易购</a>
+<span id="logo_15">苏宁易购</span></li><li class="one" id="logo_9"><a href="http://www.gome.com.cn/"  style="background:url(/uploads/allimg/131205/1_120503351V2R.png) center no-repeat;" target="_blank">国美在线</a>
+<span id="logo_9">国美在线</span></li><li class="one" id="logo_18"><a href="http://www.paipai.com/"  style="background:url(/uploads/allimg/131205/1-1312050336220-L.png) center no-repeat;" target="_blank">拍拍网</a>
+<span id="logo_18">拍拍网</span></li><li class="one" id="logo_18"><a href="http://www.yixun.com/"  style="background:url(/uploads/allimg/131205/1-131205033Q60-L.png) center no-repeat;" target="_blank">易迅网</a>
+<span id="logo_18">易迅网</span></li><li class="one" id="logo_13"><a href="http://ju.taobao.com/"  style="background:url(/uploads/allimg/131205/1_12050339512950.png) center no-repeat;" target="_blank">聚划算</a>
+<span id="logo_13">聚划算</span></li><li class="one" id="logo_14"><a href="http://www.vancl.com/"  style="background:url(/uploads/allimg/131205/1_12050341092a2.png) center no-repeat;" target="_blank">凡客诚品</a>
+<span id="logo_14">凡客诚品</span></li>
+      </ul>
+			</div>
+
+
+
+			<div id="art5" class="article">
+    <!--游戏娱乐
+      <ul>
+<li class="one" id="logo_18"><a href="http://www.3366.com/"  style="background:url(/uploads/allimg/131205/1-1312050345240-L.png) center no-repeat;" target="_blank">3366小游戏</a>
+<span id="logo_18">3366小游戏</span></li><li class="one" id="logo_18"><a href="http://www.duowan.com/"  style="background:url(/uploads/allimg/131205/1-131205034K10-L.png) center no-repeat;" target="_blank">多玩游戏</a>
+<span id="logo_18">多玩游戏</span></li><li class="one" id="logo_2"><a href="http://www.17173.com/"  style="background:url(/uploads/allimg/131205/1_1205034934KQ.png) center no-repeat;" target="_blank">17173</a>
+<span id="logo_2">17173</span></li><li class="one" id="logo_4"><a href="http://game.qq.com/"  style="background:url(/uploads/allimg/131205/1_12050351201R9.png) center no-repeat;" target="_blank">腾讯游戏</a>
+<span id="logo_4">腾讯游戏</span></li><li class="one" id="logo_18"><a href="http://www.yxdown.com/"  style="background:url(/uploads/allimg/131205/1-1312050354460-L.png) center no-repeat;" target="_blank">迅游网</a>
+<span id="logo_18">迅游网</span></li><li class="one" id="logo_17"><a href="http://www.eeyy.com/"  style="background:url(/uploads/allimg/131205/1_1205035A01047.gif) center no-repeat;" target="_blank">一游网</a>
+<span id="logo_17">一游网</span></li><li class="one" id="logo_17"><a href="http://www.265g.com/"  style="background:url(/uploads/allimg/131205/131205/1-131205035Z9102.png) center no-repeat;" target="_blank">265G</a>
+<span id="logo_17">265G</span></li><li class="one" id="logo_18"><a href="http://www.kaixin001.com/"  style="background:url(/uploads/allimg/131205/1-1312050401340-L.png) center no-repeat;" target="_blank">开心网</a>
+<span id="logo_18">开心网</span></li><li class="one" id="logo_4"><a href="http://www.tw12.cn/"  style="background:url(/uploads/allimg/140109/1-140109192Q5b4.png) center no-repeat;" target="_blank">糖薇美女网</a>
+<span id="logo_4">糖薇美女网</span></li><li class="one" id="logo_8"><a href="http://www.qiushibaike.com/"  style="background:url(/uploads/allimg/131205/1_120504092Y040.png) center no-repeat;" target="_blank">糗事百科</a>
+<span id="logo_8">糗事百科</span></li><li class="one" id="logo_9"><a href="http://www.mop.com/"  style="background:url(/uploads/allimg/131205/1_120504095S404.png) center no-repeat;" target="_blank">猫扑</a>
+<span id="logo_9">猫扑</span></li><li class="one" id="logo_10"><a href="http://www.qidian.com/"  style="background:url(/uploads/allimg/131205/1_12050410504a7.png) center no-repeat;" target="_blank">起点中文网</a>
+<span id="logo_10">起点中文网</span></li>
+	</ul>
+	</div>
+
+			<div id="art6" class="article">
+    
+      <ul>
+<li class="one" id="logo_1"><a href="http://www.tianqi.com/"  style="background:url(http://www.myler.cn/metro/images/logo_001e.png) center no-repeat;" target="_blank">今日天气</a>
+<span id="logo_1">今日天气</span></li><li class="one" id="logo_2"><a href="http://translate.google.com/"  style="background:url(/uploads/allimg/131205/1_12050413039630.png) center no-repeat;" target="_blank">谷歌翻译</a>
+<span id="logo_2">谷歌翻译</span></li><li class="one" id="logo_3"><a href="http://map.baidu.com/"  style="background:url(/uploads/allimg/131205/1-1312050414520-L.png) center no-repeat;" target="_blank">百度地图</a>
+<span id="logo_3">百度地图</span></li><li class="one" id="logo_4"><a href="http://tools.2345.com/rili.htm"  style="background:url(/uploads/allimg/131205/1_1205041F095Q.png) center no-repeat;" target="_blank">万年历</a>
+<span id="logo_4">万年历</span></li><li class="one" id="logo_18"><a href="http://www.12306.cn/"  style="background:url(/uploads/allimg/131205/131205/1-131205041ZW05.png) center no-repeat;" target="_blank">12306火车票订购</a>
+<span id="logo_18">12306火车票订购</span></li><li class="one" id="logo_6"><a href="http://www.8684.cn/"  style="background:url(/uploads/allimg/131205/1_12050419525312.png) center no-repeat;" target="_blank">公交线路查询</a>
+<span id="logo_6">公交线路查询</span></li><li class="one" id="logo_18"><a href="http://flight.qunar.com/"  style="background:url(/uploads/allimg/131205/1-1312050422160-L.png) center no-repeat;" target="_blank">机票查询预定</a>
+<span id="logo_18">机票查询预定</span></li><li class="one" id="logo_8"><a href="http://www.17u.cn/"  style="background:url(/uploads/allimg/131205/1-131205042Z10-L.png) center no-repeat;" target="_blank">同程网</a>
+<span id="logo_8">同程网</span></li><li class="one" id="logo_9"><a href="http://www.10086.cn/"  style="background:url(/uploads/allimg/131205/1_12050430123351.png) center no-repeat;" target="_blank">中国移动</a>
+<span id="logo_9">中国移动</span></li><li class="one" id="logo_1"><a href="http://www.10010.com/"  style="background:url(/uploads/allimg/131205/1_12050430424I5.png) center no-repeat;" target="_blank">中国联通</a>
+<span id="logo_1">中国联通</span></li><li class="one" id="logo_12"><a href="http://www.189.cn/"  style="background:url(/uploads/allimg/131205/1_120504311564Q.png) center no-repeat;" target="_blank">中国电信</a>
+<span id="logo_12">中国电信</span></li><li class="one" id="logo_13"><a href="https://www.alipay.com/"  style="background:url(/uploads/allimg/131205/1_12050433225045.png) center no-repeat;" target="_blank">支付宝</a>
+<span id="logo_13">支付宝</span></li><li class="one" id="logo_15"><a href="http://www.kuaidi100.com/"  style="background:url(/uploads/allimg/131205/1-1312050436430-L.png) center no-repeat;" target="_blank">快递查询</a>
+<span id="logo_15">快递查询</span></li><li class="one" id="logo_8"><a href="http://www.cston.cn/"  style="background:url(/uploads/allimg/140109/1-1401091939450-L.png) center no-repeat;" target="_blank">代理服务器</a>
+<span id="logo_8">代理服务器</span></li>
+      </ul>
+    </div>
+
+
+
+			<div id="art7" class="article">
+     
+      <ul>
+<li class="one" id="logo_18"><a href="http://www.skycn.com/"  style="background:url(/uploads/allimg/131205/1-1312050446200-L.png) center no-repeat;" target="_blank">天空下载</a>
+<span id="logo_18">天空下载</span></li><li class="one" id="logo_2"><a href="http://www.onlinedown.net/"  style="background:url(/uploads/allimg/131205/1_1205044P930L.png) center no-repeat;" target="_blank">华军软件园</a>
+<span id="logo_2">华军软件园</span></li><li class="one" id="logo_3"><a href="http://www.xiazaiba.com/"  style="background:url(/uploads/allimg/131205/1_12050451344958.png) center no-repeat;" target="_blank">下载吧</a>
+<span id="logo_3">下载吧</span></li><li class="one" id="logo_4"><a href="http://xiazai.zol.com.cn/"  style="background:url(/uploads/allimg/131205/1-1312050455500-L.png) center no-repeat;" target="_blank">ZOL下载</a>
+<span id="logo_4">ZOL下载</span></li><li class="one" id="logo_5"><a href="http://yunpan.360.cn/"  style="background:url(/uploads/allimg/131205/1-131205045H00-L.png) center no-repeat;" target="_blank">360云盘</a>
+<span id="logo_5">360云盘</span></li><li class="one" id="logo_18"><a href="http://pan.baidu.com/"  style="background:url(/uploads/allimg/131205/1-131205045R90-L.png) center no-repeat;" target="_blank">百度云网盘</a>
+<span id="logo_18">百度云网盘</span></li><li class="one" id="logo_7"><a href="http://www.115.com/"  style="background:url(/uploads/allimg/131205/1_120504592BY8.png) center no-repeat;" target="_blank">115网盘</a>
+<span id="logo_7">115网盘</span></li><li class="one" id="logo_8"><a href="http://www.weiyun.com/"  style="background:url(/uploads/allimg/131205/1-1312050501510-L.png) center no-repeat;" target="_blank">微云</a>
+<span id="logo_8">微云</span></li><li class="one" id="logo_5"><a href="http://www.mb115.com/"  style="background:url(/uploads/allimg/140109/1-1401091944450-L.png) center no-repeat;" target="_blank">DEDECMS模板之家</a>
+<span id="logo_5">DEDECMS模板之家</span></li>
+      </ul>
+    </div>
+
+	</div>
+-->
+
+
+<div id="footer">
+<div class="footer">
+<li>&#169;2016-2017 <a href="https://www.looooool.cn/" >站长博客</a>（里面什么都没有） <a href="https://go.looooool.cn/" >略略略导航-走你</a> 蜀ICP备15024907号-2</li>
+</div>
+<div class="skins"><ul class="skin_chose"><a class="bg1" id="btn1">Metro</a><a class="bg2" id="btn2">清新</a><a class="bg3" id="btn3">简约</a><a class="bg4" id="btn4">温暖</a><a class="bg5" id="btn5">线条</a><a class="bg6" id="btn6">凉爽</a><a class="bg7" id="btn7">运动</a><a class="bg8" id="btn8">夜间</a><a class="bg9" id="btn9">别致</a></ul>
+<ul class="add"><a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a><a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>
+</div>
+</div>
+<script type="text/javascript"> 
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('(4($){5 q=$(".z");5 C=$(".k");5 9=$(".k B");5 f=$(".k .f");5 2=0;5 6=0;5 g=4(){q.m(4(){$(d).w($(a).w()),$(d).c($(a).c()+s)})};g();5 b=4(){6=0;7(2<0){2=9.v()-1};7(2>=9.v()){2=0};f.n().o({A:f.c()*2},F,"r");$("E,D").n().o({y:(($(a).c()+s)*2)},O,"r",4(){6=0});9.P("l").N(2).R("l")};9.m(4(i){$(d).Q(4(){2=9.2($(d));b()},4(){})});$(a).I(4(){g()});5 j=4(e){e=e||a.H;7(e.u){6+=(-e.u/G)}J 7(e.x){6+=e.x/3};7(6>=8){b(2++)};7(6<=-8){b(2--)}};7(h.p){h.p(\'M\',j,L)};a.t=h.t=j})(K);',54,54,'||index||function|var|direct|if||guideLi|window|goToFun|width|this||curBg|resetFun|document||scrollFunc|sideGuide|on|each|stop|animate|addEventListener|goTo|swing|20|onmousewheel|wheelDelta|size|height|detail|scrollLeft|article|left|li|guide|body|html|1000|120|event|resize|else|jQuery|false|DOMMouseScroll|eq|800|removeClass|click|addClass'.split('|'),0,{}))
+</script>
+
+<script type="text/javascript"> 
+	//云朵
+	var _xy = "10px 0",x=0;
+	setInterval(function(){
+        x = x + 1;
+        _xy = x + "px 0";
+        $("#content .cloud").css({backgroundPosition:_xy});
+	},100);
+<!--
+document.oncontextmenu=new Function('event.returnValue=false;');
+document.onselectstart=new Function('event.returnValue=false;');
+-->
+</script>
+</body>
+</html>
